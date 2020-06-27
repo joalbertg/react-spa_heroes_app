@@ -1,5 +1,9 @@
 # SPA Heroes App
 
+- [React Router][react_router]
+
+[react_router]: https://reacttraining.com/react-router/web/guides/quick-start
+
 ### Installs
 
 With `package.js` and dependencies
@@ -9,6 +13,7 @@ docker-compose run app yarn
 
 Without dependencies
 ```shell
+docker-compose run app yarn add react-router-dom
 ```
 
 ### Project Structure
@@ -22,11 +27,25 @@ Without dependencies
 ├── package.json
 ├── src
 │   ├── HeroesApp.js
+│   ├── components
+│   │   ├── dc
+│   │   │   └── DcScreen.js
+│   │   ├── heroes
+│   │   │   └── HeroeScreen.js
+│   │   ├── login
+│   │   │   └── LoginScreen.js
+│   │   ├── marvel
+│   │   │   └── MarvelScreen.js
+│   │   └── ui
+│   │       └── NavBar.js
 │   ├── index.js
+│   ├── routers
+│   │   └── AppRouter.js
 │   └── setupTests.js
 └── yarn.lock
 
-1 directory, 8 files
+8 directories, 14 files
+
 ```
 
 ### Start Project

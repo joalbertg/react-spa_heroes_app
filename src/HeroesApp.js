@@ -1,14 +1,11 @@
 import React from 'react';
 
+import { AppRouter } from './routers/AppRouter';
+
 //import './styles.css';
 
 const HeroesApp = () => {
-  return(
-    <>
-      <h1>HeroesApp</h1>
-      <hr />
-    </>
-  );
+  return <AppRouter />;
 }
 
 export default HeroesApp;
