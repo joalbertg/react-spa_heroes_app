@@ -31,7 +31,7 @@ docker-compose run app yarn add react-router-dom
 │   │   ├── dc
 │   │   │   └── DcScreen.js
 │   │   ├── heroes
-│   │   │   └── HeroeScreen.js
+│   │   │   └── HeroScreen.js
 │   │   ├── login
 │   │   │   └── LoginScreen.js
 │   │   ├── marvel
@@ -40,12 +40,12 @@ docker-compose run app yarn add react-router-dom
 │   │       └── NavBar.js
 │   ├── index.js
 │   ├── routers
-│   │   └── AppRouter.js
+│   │   ├── AppRouter.js
+│   │   └── DashboardRoutes.js
 │   └── setupTests.js
 └── yarn.lock
 
-8 directories, 14 files
-
+8 directories, 15 files
 ```
 
 ### Start Project
