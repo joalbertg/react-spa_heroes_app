@@ -22,6 +22,7 @@ docker-compose run app yarn add react-router-dom query-string
 
 > run `tree -I "node_modules|public"`
 ```shell
+
 .
 ├── Dockerfile
 ├── README.md
@@ -29,31 +30,45 @@ docker-compose run app yarn add react-router-dom query-string
 ├── package.json
 ├── src
 │   ├── HeroesApp.js
+│   ├── auth
+│   │   ├── AuthContext.js
+│   │   └── authReducer.js
 │   ├── components
 │   │   ├── dc
 │   │   │   └── DcScreen.js
 │   │   ├── heroes
+│   │   │   ├── HeroCard.js
 │   │   │   ├── HeroList.js
 │   │   │   └── HeroScreen.js
 │   │   ├── login
 │   │   │   └── LoginScreen.js
 │   │   ├── marvel
 │   │   │   └── MarvelScreen.js
+│   │   ├── search
+│   │   │   └── SearchScreen.js
 │   │   └── ui
 │   │       └── NavBar.js
 │   ├── data
 │   │   └── heroes.js
+│   ├── hooks
+│   │   └── useForm.js
 │   ├── index.js
 │   ├── routers
 │   │   ├── AppRouter.js
-│   │   └── DashboardRoutes.js
+│   │   ├── DashboardRoutes.js
+│   │   ├── PrivateRoute.js
+│   │   └── PublicRoute.js
 │   ├── selectors
 │   │   ├── getHeroById.js
+│   │   ├── getHeroByName.js
 │   │   └── getHeroesByPublisher.js
-│   └── setupTests.js
+│   ├── setupTests.js
+│   └── types
+│       └── types.js
 └── yarn.lock
 
-10 directories, 19 files
+14 directories, 28 files
+
 ```
 
 ### Start Project
