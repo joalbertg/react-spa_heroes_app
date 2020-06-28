@@ -1,4 +1,10 @@
 export const demoAuth = {
-  logged: false
+  login: {
+    name: 'Joalbert',
+    logged: true
+  },
+  logout: {
+    logged: false
+  }
 }
 

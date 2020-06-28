@@ -6,9 +6,11 @@ import { AuthContext } from '../../auth/AuthContext';
 import { demoAuth } from '../fixtures/demoAuth';
 
 describe('Tests AppRouter component', () => {
+  const { login, logout } = demoAuth;
+
   test('Should login screen if unauthenticated', () => {
     const contextValue = {
-      user: demoAuth,
+      user: logout,
       dispatch: jest.fn()
     }
 
@@ -25,13 +27,8 @@ describe('Tests AppRouter component', () => {
   });
 
   test('Should marvel screen if is authenticated', () => {
-    const user = {
-      name: 'Joalbert',
-      logged: true
-    };
-
     const contextValue = {
-      user,
+      user: login,
       dispatch: jest.fn()
     };
 
@@ -44,7 +41,7 @@ describe('Tests AppRouter component', () => {
 
     expect(wrapper).toMatchSnapshot();
     expect(wrapper.find('.navbar').exists()).toBeTruthy();
-    expect(wrapper.find('div ul > span').text()).toBe(user.name);
+    expect(wrapper.find('div ul > span').text()).toBe(login.name);
     expect(wrapper.find('div ul button.nav-item').text()).toBe('Logout');
   });
 });
