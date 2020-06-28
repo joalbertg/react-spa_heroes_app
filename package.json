@@ -36,6 +36,11 @@
   },
   "devDependencies": {
     "@testing-library/dom": "5",
+    "@testing-library/react-hooks": "^3.3.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.5.0",
+    "react-test-renderer": "16.9",
     "typescript": "3.7"
   }
 }

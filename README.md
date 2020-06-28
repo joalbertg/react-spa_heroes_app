@@ -3,8 +3,19 @@
 - [React Router][react_router]
 - [Animate CSS][animate_st]
 
+#### Tests
+- [Enzyme][enzymejs]
+- [enzyme-to-json][enzyme_to_json]
+- [React Hooks Testing Library][react_hooks_testing]
+- [React Router Testing][react_router_testing]
+
 [react_router]: https://reacttraining.com/react-router/web/guides/quick-start
 [animate_st]: https://animate.style/
+
+[enzymejs]: https://enzymejs.github.io/enzyme/
+[enzyme_to_json]: https://www.npmjs.com/package/enzyme-to-json
+[react_hooks_testing]: https://react-hooks-testing-library.com/
+[react_router_testing]: https://reacttraining.com/react-router/web/guides/testing
 
 ### Installs
 
@@ -16,6 +27,9 @@ docker-compose run app yarn
 Without dependencies
 ```shell
 docker-compose run app yarn add react-router-dom query-string
+docker-compose run app yarn add enzyme enzyme-adapter-react-16 --dev
+docker-compose run app yarn add enzyme-to-json --dev
+docker-compose run app yarn add @testing-library/react-hooks --dev
 ```
 
 ### Project Structure
