@@ -1,8 +1,10 @@
 # SPA Heroes App
 
 - [React Router][react_router]
+- [Animate CSS][animate_st]
 
 [react_router]: https://reacttraining.com/react-router/web/guides/quick-start
+[animate_st]: https://animate.style/
 
 ### Installs
 
@@ -13,7 +15,7 @@ docker-compose run app yarn
 
 Without dependencies
 ```shell
-docker-compose run app yarn add react-router-dom
+docker-compose run app yarn add react-router-dom query-string
 ```
 
 ### Project Structure

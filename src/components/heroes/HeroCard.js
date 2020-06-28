@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 //import './styles.css';
 
-export const HeroCard = ({ hero }) => {
+export const HeroCard = ({ hero, className }) => {
   const {
     id,
     superhero,
@@ -13,7 +13,7 @@ export const HeroCard = ({ hero }) => {
   } = hero;
 
   return(
-    <div className='card ms-3' style={ { maxWidth: 540 } }>
+    <div className={`card ms-3 ${className}`} style={ { maxWidth: 540 } }>
       <div className='row no-gutters'>
         <div className='col-md-4'>
           <img className='card-img' src={`./assets/heroes/${id}.jpg`} alt={superhero} />
