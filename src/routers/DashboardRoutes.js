@@ -5,7 +5,7 @@ import {
   Redirect
 } from "react-router-dom";
 
-import { Navbar } from '../components/ui/NavBar';
+import { Navbar } from '../components/ui/Navbar';
 import { HeroScreen } from '../components/heroes/HeroScreen';
 import { MarvelScreen } from '../components/marvel/MarvelScreen';
 import { DcScreen } from '../components/dc/DcScreen';

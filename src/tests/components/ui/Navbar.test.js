@@ -4,7 +4,7 @@ import { MemoryRouter, useHistory } from 'react-router-dom';
 
 import { AuthContext } from '../../../auth/AuthContext';
 import { demoAuth } from '../../fixtures/demoAuth';
-import { Navbar } from '../../../components/ui/NavBar';
+import { Navbar } from '../../../components/ui/Navbar';
 import { types } from '../../../types/types';
 
 // reference of function
@@ -21,7 +21,11 @@ jest.mock('react-router-dom', () => {
   };
 });
 
-describe('Tests NavBar component ', () => {
+describe('Tests Navbar component ', () => {
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
   const { login, logout } = demoAuth;
   const contextValue = {
     user: login,
@@ -35,10 +39,6 @@ describe('Tests NavBar component ', () => {
       </MemoryRouter>
     </AuthContext.Provider>
   );
-
-  afterEach(() => {
-    jest.clearAllMocks();
-  });
 
   test('Should display correctly', () => {
     expect(wrapper).toMatchSnapshot();
