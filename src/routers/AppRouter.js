@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import {
-  HashRouter,
   BrowserRouter as Router,
   Switch
 } from "react-router-dom";
@@ -14,7 +13,6 @@ import { DashboadRoutes } from '../routers/DashboardRoutes';
 export const AppRouter = () => {
   const { user: { logged } } = useContext(AuthContext);
   return(
-    <HashRouter basename="/">
     <Router>
       <div>
         <Switch>
@@ -31,6 +29,5 @@ export const AppRouter = () => {
         </Switch>
       </div>
     </Router>
-    </HashRouter>
   );
 }

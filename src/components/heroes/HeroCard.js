@@ -36,3 +36,4 @@ export const HeroCard = ({ hero, className }) => {
     </div>
   );
 }
+
