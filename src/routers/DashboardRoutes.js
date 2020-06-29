@@ -2,7 +2,8 @@ import React from 'react';
 import {
   Switch,
   Route,
-  Redirect
+  Redirect,
+  HashRouter
 } from "react-router-dom";
 
 import { Navbar } from '../components/ui/Navbar';
@@ -13,7 +14,7 @@ import { SearchScreen } from '../components/search/SearchScreen';
 
 export const DashboadRoutes = () => {
   return(
-    <>
+    <HashRouter basename="/">
       <Navbar />
       <div className="container mt-2">
         <Switch>
@@ -25,7 +26,7 @@ export const DashboadRoutes = () => {
           <Redirect to="/marvel" />
         </Switch>
       </div>
-    </>
+    </HashRouter>
   );
 }
 

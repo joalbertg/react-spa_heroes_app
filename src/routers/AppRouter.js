@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import {
   BrowserRouter as Router,
-  Switch
+  Switch,
+  HashRouter
 } from "react-router-dom";
 
 import { PublicRoute } from './PublicRoute';
@@ -13,21 +14,23 @@ import { DashboadRoutes } from '../routers/DashboardRoutes';
 export const AppRouter = () => {
   const { user: { logged } } = useContext(AuthContext);
   return(
-    <Router>
-      <div>
-        <Switch>
-          <PublicRoute
-            isAuthenticated={logged}
-            exact path='/login'
-            component={LoginScreen}
-          />
-          <PrivateRoute
-            isAuthenticated={logged}
-            path='/'
-            component={DashboadRoutes}
-          />
-        </Switch>
-      </div>
-    </Router>
+    <HashRouter basename="/">
+      <Router>
+        <div>
+          <Switch>
+            <PublicRoute
+              isAuthenticated={logged}
+              exact path='/login'
+              component={LoginScreen}
+            />
+            <PrivateRoute
+              isAuthenticated={logged}
+              path='/'
+              component={DashboadRoutes}
+            />
+          </Switch>
+        </div>
+      </Router>
+    </HashRouter>
   );
 }
