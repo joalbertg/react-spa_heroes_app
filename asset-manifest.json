@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/react-spa_heroes_app/static/js/main.dc92070c.chunk.js",
+    "main.js.map": "/react-spa_heroes_app/static/js/main.dc92070c.chunk.js.map",
+    "runtime-main.js": "/react-spa_heroes_app/static/js/runtime-main.3ce30c9b.js",
+    "runtime-main.js.map": "/react-spa_heroes_app/static/js/runtime-main.3ce30c9b.js.map",
+    "static/js/2.9364c9d2.chunk.js": "/react-spa_heroes_app/static/js/2.9364c9d2.chunk.js",
+    "static/js/2.9364c9d2.chunk.js.map": "/react-spa_heroes_app/static/js/2.9364c9d2.chunk.js.map",
+    "index.html": "/react-spa_heroes_app/index.html",
+    "precache-manifest.8c995e3e3f1f670819dc77917c227813.js": "/react-spa_heroes_app/precache-manifest.8c995e3e3f1f670819dc77917c227813.js",
+    "service-worker.js": "/react-spa_heroes_app/service-worker.js",
+    "static/js/2.9364c9d2.chunk.js.LICENSE.txt": "/react-spa_heroes_app/static/js/2.9364c9d2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3ce30c9b.js",
+    "static/js/2.9364c9d2.chunk.js",
+    "static/js/main.dc92070c.chunk.js"
+  ]
+}
