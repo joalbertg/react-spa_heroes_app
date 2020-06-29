@@ -36,7 +36,6 @@ docker-compose run app yarn add @testing-library/react-hooks --dev
 
 > run `tree -I "node_modules|public"`
 ```shell
-
 .
 ├── Dockerfile
 ├── README.md
@@ -68,7 +67,7 @@ docker-compose run app yarn add @testing-library/react-hooks --dev
 │   │   └── useForm.js
 │   ├── index.js
 │   ├── routers
-│   │   ├── AppRouter.js
+│  │   ├── AppRouter.js
 │   │   ├── DashboardRoutes.js
 │   │   ├── PrivateRoute.js
 │   │   └── PublicRoute.js
@@ -77,12 +76,28 @@ docker-compose run app yarn add @testing-library/react-hooks --dev
 │   │   ├── getHeroByName.js
 │   │   └── getHeroesByPublisher.js
 │   ├── setupTests.js
+│   ├── tests
+│   │   ├── auth
+│   │   │   └── authReducer.test.js
+│   │   ├── components
+│   │   │   └── ui
+│   │   │       ├── Navbar.test.js
+│   │   │       └── __snapshots__
+│   │   │           └── Navbar.test.js.snap
+│   │   ├── fixtures
+│   │   │   └── demoAuth.js
+│   │   └── routers
+│   │       ├── AppRouter.test.js
+│   │       ├── DashboardRoutes.test.js
+│   │       ├── PrivateRoute.test.js
+│   │       └── __snapshots__
+│   │           ├── AppRouter.test.js.snap
+│   │           └── DashboardRoutes.test.js.snap
 │   └── types
 │       └── types.js
 └── yarn.lock
 
-14 directories, 28 files
-
+22 directories, 37 files
 ```
 
 ### Start Project
