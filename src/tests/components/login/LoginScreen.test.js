@@ -61,6 +61,5 @@ describe('Tests LoginScreen component', () => {
     expect(history.replace).not.toHaveBeenCalledWith('/');
     expect(history.replace).toHaveBeenCalledWith(lastPath);
   });
-
 });
 

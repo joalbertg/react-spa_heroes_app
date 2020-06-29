@@ -10,7 +10,7 @@ Array [
       href="/"
       onClick={[Function]}
     >
-      Asociaciones
+      Associations
     </a>
     <div
       className="navbar-collapse"

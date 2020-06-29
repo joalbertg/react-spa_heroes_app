@@ -32,9 +32,47 @@ docker-compose run app yarn add enzyme-to-json --dev
 docker-compose run app yarn add @testing-library/react-hooks --dev
 ```
 
+### Screenshots
+
+<p align="center">
+  <kbd>
+    <img src="screenshots/login.png" title="login"  width="400px" height="auto">
+  </kbd>
+</p>
+
+<p align="center">
+  <kbd>
+    <img src="screenshots/marvel-screen.png" title="marvel screen"  width="800px" height="auto">
+  </kbd>
+</p>
+
+<p align="center">
+  <kbd>
+    <img src="screenshots/dc-screen.png" title="dc screen"  width="800px" height="auto">
+  </kbd>
+</p>
+
+<p align="center">
+  <kbd>
+    <img src="screenshots/empty-search-screen.png" title="search screen"  width="400px" height="auto">
+  </kbd>
+</p>
+
+<p align="center">
+  <kbd>
+    <img src="screenshots/search-screen-green.png" title="search screen with green"  width="600px" height="auto">
+  </kbd>
+</p>
+
+<p align="center">
+  <kbd>
+    <img src="screenshots/search-screen-anything.png" title="search screen anything"  width="400px" height="auto">
+  </kbd>
+</p>
+
 ### Project Structure
 
-> run `tree -I "node_modules|public"`
+> run `tree -I "node_modules|public|screenshots"`
 ```shell
 .
 ├── Dockerfile
@@ -60,14 +98,14 @@ docker-compose run app yarn add @testing-library/react-hooks --dev
 │   │   ├── search
 │   │   │   └── SearchScreen.js
 │   │   └── ui
-│   │       └── NavBar.js
+│   │       └── Navbar.js
 │   ├── data
 │   │   └── heroes.js
 │   ├── hooks
 │   │   └── useForm.js
 │   ├── index.js
 │   ├── routers
-│  │   ├── AppRouter.js
+│   │   ├── AppRouter.js
 │   │   ├── DashboardRoutes.js
 │   │   ├── PrivateRoute.js
 │   │   └── PublicRoute.js
@@ -80,6 +118,18 @@ docker-compose run app yarn add @testing-library/react-hooks --dev
 │   │   ├── auth
 │   │   │   └── authReducer.test.js
 │   │   ├── components
+│   │   │   ├── heroes
+│   │   │   │   ├── HeroScreen.test.js
+│   │   │   │   └── __snapshots__
+│   │   │   │       └── HeroScreen.test.js.snap
+│   │   │   ├── login
+│   │   │   │   ├── LoginScreen.test.js
+│   │   │   │   └── __snapshots__
+│   │   │   │       └── LoginScreen.test.js.snap
+│   │   │   ├── search
+│   │   │   │   ├── SearchScreen.test.js
+│   │   │   │   └── __snapshots__
+│   │   │   │       └── SearchScreen.test.js.snap
 │   │   │   └── ui
 │   │   │       ├── Navbar.test.js
 │   │   │       └── __snapshots__
@@ -97,7 +147,7 @@ docker-compose run app yarn add @testing-library/react-hooks --dev
 │       └── types.js
 └── yarn.lock
 
-22 directories, 37 files
+28 directories, 43 files
 ```
 
 ### Start Project

@@ -30,7 +30,7 @@ exports[`Tests AppRouter component Should marvel screen if is authenticated 1`] 
         href="/"
         onClick={[Function]}
       >
-        Asociaciones
+        Associations
       </a>
       <div
         className="navbar-collapse"
