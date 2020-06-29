@@ -1,6 +1,5 @@
 {
-  "name": "spa-heroes2",
-  "homepage": "https://joalbertg.github.io/react-spa_heroes_app/",
+  "name": "spa-heroes",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
